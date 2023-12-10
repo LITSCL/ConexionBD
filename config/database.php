@@ -2,7 +2,7 @@
 define("SERVIDOR", "localhost");
 define("USUARIO", "root");
 define("CLAVE", "root");
-define("BASEDEDATOS", "dbpersona");
+define("BASEDEDATOS", "dbconexionbd");
 
 class Database {
     public $_db;
