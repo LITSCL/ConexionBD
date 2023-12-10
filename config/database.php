@@ -10,7 +10,7 @@ class Database {
     public function __construct() {
         $this->_db = new mysqli(SERVIDOR, USUARIO, CLAVE, BASEDEDATOS);
         if ($this->_db->connect_errno) {
-            echo "Fallo la conexión" . $this->_db->connect_errno;
+            echo "Fallo la conexiÃ³n" . $this->_db->connect_errno;
             return;
         }
     }

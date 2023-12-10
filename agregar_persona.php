@@ -8,7 +8,7 @@
 </head>
 <body>
 	<?php
-	if (isset($_REQUEST["agregar"])) { //Aca se esta consultando si se dio click al botón Agregar.
+	if (isset($_REQUEST["agregar"])) { //Aca se esta consultando si se dio click al botÃ³n Agregar.
 	    $persona = new Persona();
 	    $crearPersona = $persona->create($_REQUEST["rut"], $_REQUEST["nombre"], $_REQUEST["apellido"], $_REQUEST["correo"]);
 	    if ($crearPersona == 1){ //Si create es igual a 1 singnifica True (Si ingreso el registro).
@@ -21,7 +21,7 @@
 	        echo "<script>alert('Error de ingreso'); window.location='AgregarPersona.php'</script>";
 	    }
 	}
-	else { //Si no se le dio click al botón Agregar se muestra el formulario.
+	else { //Si no se le dio click al botÃ³n Agregar se muestra el formulario.
 	?>
     	<div>
         	<form action="agregar_persona.php" method="GET">
